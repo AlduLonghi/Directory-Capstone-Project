@@ -4,6 +4,8 @@ $form-color: rgba(255, 255, 255, 0.9);
 $lato-font-family: 'Lato', sans-serif;
 $grey-color: #98A4A5;
 $blue-color: #509CD8;
+$line-color: rgba(51, 51, 51, 0.5);
+$dark-grey: #262626;
 
 
 
@@ -37,7 +39,6 @@ header {
     background-color: $red-color;
 }
 
-
 .main-logo {
     width: 4rem;
     height: 4rem;
@@ -51,7 +52,6 @@ nav {
             height: 1.3rem;
         }
     }
-
 }
 
 .main-header {
@@ -143,7 +143,7 @@ nav {
 
 .sd-1,
 .sd-2,
-.sd-3, {
+.sd-3 {
     div {
         width: 85%;
         margin: 0 auto;
@@ -170,6 +170,54 @@ nav {
 
 .sd-btn-2 {
     color: $grey-color;
+}
+
+footer {
+    background-color: black;
+    .footer-fr {
+        width: 90%;
+        align-items: center;
+        border-top: 1px solid $line-color;
+        border-bottom: 1px solid $line-color;
+        ul {
+            width: 30%;
+            height: 100%;
+            font-size: 0.7rem;
+            margin-bottom: 0;
+            li {
+                height: 100%;
+            }
+            a {
+                display: block;
+                height: 100%;
+                padding: 0.5rem 0;
+                text-align: center;
+               
+            }
+        }
+    }
+}
+
+
+.footer-input,
+.footer-btn {
+    background-color: black;
+    border: 1px solid $line-color;
+    color: $raw-color;
+}
+
+.footer-btn {
+    background-color: $dark-grey;
+    color: $grey-color;
+}
+
+.footer-input-container {
+    height: 2.5rem;
+    width: 90%;
+}
+
+.footer-span {
+    color: $red-color;
 }
 
 @media screen and (min-width: 768px) {
@@ -216,7 +264,6 @@ nav {
         h4 {
             font-size: 1.5rem;
             margin-bottom: 0;
-           
         }
 
         img {
@@ -246,13 +293,32 @@ nav {
     .sd-1,
     .sd-2,
     .sd-3 {
-          div {
-             width: 85%;
-             margin: 0 4rem;
-             text-align: left;
+        div {
+           width: 85%;
+           margin: 0 4rem;
+           text-align: left;
         }
-    }
+     }
 
+     footer {
+        .footer-fr {
+            width: 65%;
+            border: none;
+            ul {
+                width: 40%;
+                border-top: 1px solid $line-color;
+                border-bottom: 1px solid $line-color;
+            }
+        }
+
+        .footer-sr {
+
+            width: 90%;
+        }
+
+        .footer-btn {
+            font-size: 0.8rem;
+        }
     
 }
 
@@ -300,19 +366,29 @@ nav {
     .sd-1,
     .sd-2,
     .sd-3 {
-        height: 18rem;
+        height: 16rem;
     }
 
     .sd-1,
     .sd-2,
     .sd-3 {
           div {
-             margin: 0 4rem 0 10rem;
+             margin: 0 4rem 0 8rem;
         }
     }
 
-
-
+    footer {
+            ul{
+               a {
+                   font-size: 1rem;
+               }
+            }
+        .footer-btn {
+            font-size: 1rem;
+        }
+    }
+ }
 }
+
 
 
