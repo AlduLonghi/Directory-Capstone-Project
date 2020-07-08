@@ -106,6 +106,51 @@ nav ul img {
   line-height: 1.25rem;
 }
 
+.sd-1,
+.sd-2,
+.sd-3 {
+  height: 13rem;
+}
+
+.sd-1 {
+  background-color: #D3574A;
+}
+
+.sd-2 {
+  background-color: #98A4A5;
+}
+
+.sd-3 {
+  background-color: #509CD8;
+}
+
+.sd-1 div,
+.sd-2 div,
+.sd-3 div {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sd-1 img,
+.sd-2 img,
+.sd-3 img {
+  display: none;
+}
+
+.sd-btn-1,
+.sd-btn-2 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sd-btn-1 {
+  color: #D3574A;
+}
+
+.sd-btn-2 {
+  color: #98A4A5;
+}
+
 @media screen and (min-width: 768px) {
   nav ul {
     width: 60%;
@@ -143,6 +188,22 @@ nav ul img {
   .how-to-use img {
     margin-top: 4rem;
   }
+  .sd-1 img {
+    height: 65%;
+  }
+  .sd-2 img {
+    height: 100%;
+  }
+  .sd-3 img {
+    height: 85%;
+  }
+  .sd-1 div,
+  .sd-2 div,
+  .sd-3 div {
+    width: 85%;
+    margin: 0 4rem;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -173,6 +234,16 @@ nav ul img {
   .how-to-use p {
     width: 75%;
     font-size: 1rem;
+  }
+  .sd-1,
+  .sd-2,
+  .sd-3 {
+    height: 18rem;
+  }
+  .sd-1 div,
+  .sd-2 div,
+  .sd-3 div {
+    margin: 0 4rem 0 10rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
