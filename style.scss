@@ -1,5 +1,6 @@
 $red-color: #D3574A;
 $raw-color: #FCF7F6;
+$form-color: rgba(255, 255, 255, 0.9);
 $lato-font-family: 'Lato', sans-serif;
 
 
@@ -18,8 +19,12 @@ li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
 }
 
 .raw-color {
@@ -29,6 +34,7 @@ a{
 header {
     background-color: $red-color;
 }
+
 
 .main-logo {
     width: 4rem;
@@ -46,12 +52,83 @@ nav {
 
 }
 
+.main-header {
+  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.9)), url("/assets/university.jpg");
+  background-repeat: repeat-x;
+  padding: 4rem 0;
+}
+
+
+.main-header-content {
+  width: 90%;
+}
+
+.main-header-content h2 {
+  color: $raw-color;
+  font-size: 1.5rem;
+  
+}
+
+.header-form {
+  padding: 1rem;
+  background-color: $form-color;
+  border-radius: 2px;
+  
+}
+
+.form-btn {
+  background-color: $red-color;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+
+}
+
+.form-ti {
+  padding: 0.5rem 0;
+  width: 100%;
+
+}
+
+.main-header-btn {
+   background-color: $form-color;
+}
+
 
 @media screen and (min-width: 768px) {
     nav {
         ul {
             width: 60%;
         }
+    }
+
+    .main-header-content {
+        width: 65%;
+    }
+
+    .header-form {
+        padding: 3rem 4rem;
+    }
+
+    .form-btn {
+        margin-top: 0;
+        padding: 0.8rem;
+        width: 20%;
+        font-size:0.85rem;
+    }
+
+    .form-ti {
+        padding: 0;
+        width: 80%;
+      
+    }
+
+    .main-header {
+        padding: 8rem 0;
+    }
+
+    .main-header-content h2 {
+        font-size: 3rem;
     }
 }
 
@@ -79,7 +156,14 @@ nav {
 
    .nav-link-4::after {
        content: "more";
+   }
 
+   .form-btn {
+       width: 12%;
+       padding: 0.8rem 0.5rem;
+   }
+   .form-ti {
+       width: 88% ;
    }
 
 }

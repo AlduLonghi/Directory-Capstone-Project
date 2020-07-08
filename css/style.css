@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: inherit;
+}
+
 .raw-color {
   color: #FCF7F6;
 }
@@ -39,9 +43,69 @@ nav ul img {
   height: 1.3rem;
 }
 
+.main-header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 77, 77, 0.8)), to(rgba(77, 77, 77, 0.9))), url("/assets/university.jpg");
+  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.9)), url("/assets/university.jpg");
+  background-repeat: repeat-x;
+  padding: 4rem 0;
+}
+
+.main-header-content {
+  width: 90%;
+}
+
+.main-header-content h2 {
+  color: #FCF7F6;
+  font-size: 1.5rem;
+}
+
+.header-form {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+}
+
+.form-btn {
+  background-color: #D3574A;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.form-ti {
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.main-header-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 @media screen and (min-width: 768px) {
   nav ul {
     width: 60%;
+  }
+  .main-header-content {
+    width: 65%;
+  }
+  .header-form {
+    padding: 3rem 4rem;
+  }
+  .form-btn {
+    margin-top: 0;
+    padding: 0.8rem;
+    width: 20%;
+    font-size: 0.85rem;
+  }
+  .form-ti {
+    padding: 0;
+    width: 80%;
+  }
+  .main-header {
+    padding: 8rem 0;
+  }
+  .main-header-content h2 {
+    font-size: 3rem;
   }
 }
 
@@ -62,6 +126,13 @@ nav ul img {
   }
   .nav-link-4::after {
     content: "more";
+  }
+  .form-btn {
+    width: 12%;
+    padding: 0.8rem 0.5rem;
+  }
+  .form-ti {
+    width: 88%;
   }
 }
 /*# sourceMappingURL=style.css.map */
