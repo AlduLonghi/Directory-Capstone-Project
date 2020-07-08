@@ -1,0 +1,67 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.raw-color {
+  color: #FCF7F6;
+}
+
+header {
+  background-color: #D3574A;
+}
+
+.main-logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+nav ul {
+  width: 75%;
+}
+
+nav ul img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-container::after {
+    content: "UniFinder";
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+  .nav-link-1::after {
+    content: "school";
+  }
+  .nav-link-2::after {
+    content: "about";
+  }
+  .nav-link-3::after {
+    content: "blog";
+  }
+  .nav-link-4::after {
+    content: "more";
+  }
+}
+/*# sourceMappingURL=style.css.map */
