@@ -53,7 +53,7 @@ nav {
 }
 
 .main-header {
-  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.9)), url("/assets/university.jpg");
+  background-image: linear-gradient(rgba(38, 38, 38, 0.85), rgba(38, 38, 38, 0.85)), url("/assets/university.jpg");
   background-repeat: repeat-x;
   padding: 4rem 0;
 }
@@ -94,6 +94,32 @@ nav {
    background-color: $form-color;
 }
 
+.how-to-use {
+    .row {
+        width: 95%;
+
+    }
+    img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    h4 {
+        color: $red-color;
+        margin: 3rem 0;
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
 
 @media screen and (min-width: 768px) {
     nav {
@@ -108,6 +134,7 @@ nav {
 
     .header-form {
         padding: 3rem 4rem;
+        border-radius: 0.5rem;
     }
 
     .form-btn {
@@ -129,6 +156,21 @@ nav {
 
     .main-header-content h2 {
         font-size: 3rem;
+    }
+
+    .how-to-use {
+        .row {
+            width: 75%;
+        }
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+           
+        }
+
+        img {
+            margin-top: 4rem;
+        }
     }
 }
 
@@ -164,6 +206,15 @@ nav {
    }
    .form-ti {
        width: 88% ;
+   }
+
+   .how-to-use {
+       p {
+           width: 75%;
+           font-size: 1rem;
+       }
+
+      
    }
 
 }

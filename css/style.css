@@ -44,8 +44,8 @@ nav ul img {
 }
 
 .main-header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 77, 77, 0.8)), to(rgba(77, 77, 77, 0.9))), url("/assets/university.jpg");
-  background-image: linear-gradient(rgba(77, 77, 77, 0.8), rgba(77, 77, 77, 0.9)), url("/assets/university.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 38, 38, 0.85)), to(rgba(38, 38, 38, 0.85))), url("/assets/university.jpg");
+  background-image: linear-gradient(rgba(38, 38, 38, 0.85), rgba(38, 38, 38, 0.85)), url("/assets/university.jpg");
   background-repeat: repeat-x;
   padding: 4rem 0;
 }
@@ -81,6 +81,31 @@ nav ul img {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.how-to-use .row {
+  width: 95%;
+}
+
+.how-to-use img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.how-to-use h4 {
+  color: #D3574A;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+}
+
+.how-to-use .container {
+  width: 85%;
+}
+
+.how-to-use p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
 @media screen and (min-width: 768px) {
   nav ul {
     width: 60%;
@@ -90,6 +115,7 @@ nav ul img {
   }
   .header-form {
     padding: 3rem 4rem;
+    border-radius: 0.5rem;
   }
   .form-btn {
     margin-top: 0;
@@ -106,6 +132,16 @@ nav ul img {
   }
   .main-header-content h2 {
     font-size: 3rem;
+  }
+  .how-to-use .row {
+    width: 75%;
+  }
+  .how-to-use h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .how-to-use img {
+    margin-top: 4rem;
   }
 }
 
@@ -133,6 +169,10 @@ nav ul img {
   }
   .form-ti {
     width: 88%;
+  }
+  .how-to-use p {
+    width: 75%;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
