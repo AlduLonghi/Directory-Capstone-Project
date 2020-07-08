@@ -21,6 +21,10 @@ a:hover {
   color: inherit;
 }
 
+input:focus {
+  outline: none;
+}
+
 .raw-color {
   color: #FCF7F6;
 }
@@ -32,6 +36,15 @@ header {
 .main-logo {
   width: 4rem;
   height: 4rem;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.main-logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 nav ul {
@@ -44,8 +57,8 @@ nav ul img {
 }
 
 .main-header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 38, 38, 0.85)), to(rgba(38, 38, 38, 0.85))), url("/assets/university.jpg");
-  background-image: linear-gradient(rgba(38, 38, 38, 0.85), rgba(38, 38, 38, 0.85)), url("/assets/university.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 38, 38, 0.89)), to(rgba(38, 38, 38, 0.89))), url("/assets/university.jpg");
+  background-image: linear-gradient(rgba(38, 38, 38, 0.89), rgba(38, 38, 38, 0.89)), url("/assets/university.jpg");
   background-repeat: repeat-x;
   padding: 4rem 0;
 }
@@ -141,6 +154,17 @@ nav ul img {
 .sd-btn-1,
 .sd-btn-2 {
   background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.sd-btn-1:hover,
+.sd-btn-2:hover,
+.main-header-btn:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 .sd-btn-1 {
@@ -182,6 +206,14 @@ footer .footer-fr ul a {
   text-align: center;
 }
 
+footer .footer-sr p {
+  font-size: 0.7rem;
+}
+
+footer .footer-sr h5 {
+  font-size: 1rem;
+}
+
 .footer-input,
 .footer-btn {
   background-color: black;
@@ -190,7 +222,7 @@ footer .footer-fr ul a {
 }
 
 .footer-btn {
-  background-color: #262626;
+  background-color: #0d0d0d;
   color: #98A4A5;
 }
 
@@ -203,6 +235,48 @@ footer .footer-fr ul a {
   color: #D3574A;
 }
 
+.footer-span a {
+  color: #D3574A;
+}
+
+.footer-tr {
+  background-color: #0d0d0d;
+}
+
+.footer-tr ul {
+  margin: 0;
+}
+
+.footer-tr ul li {
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.footer-tr ul li:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+.footer-tr p {
+  font-size: 0.6rem;
+}
+
+.footer-tr a {
+  height: 100%;
+}
+
+.footer-tr .footer-legality {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-icon {
+  width: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   nav ul {
     width: 60%;
@@ -213,6 +287,7 @@ footer .footer-fr ul a {
   .header-form {
     padding: 3rem 4rem;
     border-radius: 0.5rem;
+    margin-bottom: 3.5rem;
   }
   .form-btn {
     margin-top: 0;
@@ -225,10 +300,11 @@ footer .footer-fr ul a {
     width: 80%;
   }
   .main-header {
-    padding: 8rem 0;
+    padding: 6rem 0;
   }
   .main-header-content h2 {
     font-size: 3rem;
+    margin-bottom: 3.5rem;
   }
   .how-to-use .row {
     width: 75%;
@@ -268,8 +344,25 @@ footer .footer-fr ul a {
   footer .footer-sr {
     width: 90%;
   }
+  footer .footer-sr p {
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+  footer .footer-sr h5 {
+    font-size: 1.1rem;
+  }
   footer .footer-btn {
     font-size: 0.8rem;
+  }
+  footer .footer-tr p {
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+  footer .footer-legality {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 }
 
@@ -317,6 +410,12 @@ footer .footer-fr ul a {
   }
   footer .footer-btn {
     font-size: 1rem;
+  }
+  footer .footer-sr p {
+    font-size: 1rem;
+  }
+  footer .footer-tr p {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
