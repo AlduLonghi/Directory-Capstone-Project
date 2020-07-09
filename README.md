@@ -7,9 +7,9 @@ In this project:
 1. I took a mobile first approach in styling the page ensuring it work for all screen sizes.
 2. Flex and grid properties were used for the page layout using the bootstrap v4.5 framework and I used Sass as a pre-processor.
 
-![screenshot] (/assets/homepage.png)
-![screenshot] (/assets/search-results.png)
-![screenshot] (/assets/uni-info.png)
+![screenshot](/assets/homepage.png)
+![screenshot](/assets/search-results.png)
+![screenshot](/assets/uni-info.png)
 
 ​​
 
