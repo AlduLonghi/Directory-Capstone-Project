@@ -1,14 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="assets/birrete.svg" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search results</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="py-3">
+        <nav>
+            <div class="container-fluid">
+              <div class="row"> 
+                 <div class="logo-container col-12 col-md-4 d-flex justify-content-center raw-color font-weight-bold">
+                     <a href="#">
+                     <img class="main-logo" src="./assets/birrete.svg" alt="page-logo">
+                    </a>
+                 </div>
+                 <div class="col-12 col-md-8 mt-sm-2 mt-md-0 d-flex">
+                     <ul class="d-flex justify-content-around mx-auto my-auto">
+                         <li><a class="nav-link-1 text-uppercase font-weight-bold raw-color" href="#">
+                             <img src="./assets/lupa.svg" alt="">
+                         </a></li>
+                         <li><a class="nav-link-2 text-uppercase font-weight-bold raw-color" href="#">
+                             <img src="./assets/usuario.svg" alt="">
+                         </a></li>
+                         <li><a class="nav-link-3 text-uppercase font-weight-bold raw-color" href="#">
+                             <img src="./assets/wifi.svg" alt="">
+                         </a></li>
+                         <li><a class="nav-link-4 text-uppercase font-weight-bold raw-color" href="#">
+                             <img src="./assets/simbolo-de-menu-de-tres-lineas-paralelas.svg" alt="">
+                         </a></li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+       </nav>
+    </header>
+    <main>
+        <section class="results-filter container-fluid  my-4">
+            <div class="row py-4">
+                <h4 class="mx-auto text-center text-muted">Filter by name, country, budget or curriculum:</h4>
+            </div>
+            <div class="row">
+                <form class="results-form d-flex align-items-baseline justify-content-around mx-auto" action="">
+                    <div class=>
+                        <label class="d-block text-uppercase font-weight-bold text-dark text-center" for="university-name">University's name</label>
+                        <input class="px-2" type="text">
+                    </div>
+                    <div>
+                        <label class="d-block text-uppercase font-weight-bold text-dark text-center" for="country">Country</label>
+                        <select name="country" id="">
+                            <option value=""></option>
+                            <option value="argentina">Argentina</option>
+                            <option value="u.s">U.S</option>
+                            <option value="china">China</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="d-block text-uppercase font-weight-bold text-dark text-center" for="career">Career</label>
+                        <select  name="career" id="">
+                            <option value=""></option>
+                            <option value="Medicine">Medicine</option>
+                            <option value="Social work">Social work</option>
+                            <option value="Engeniers">Engenier</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="d-block text-uppercase font-weight-bold text-dark text-center" for="budget">Budget</label>
+                        <select name="budget" id="">
+                            <option value=""></option>
+                            <option value="up to 1000">up to 1000</option>
+                            <option value="1000 to 2000">1000 to 2000</option>
+                            <option value="2000+">2000+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="d-block text-uppercase font-weight-bold text-dark text-center" for="prestige">Prestige</label>
+                        <select name="prestige" id="">
+                            <option value=""></option>
+                            <option value="5-stars">5 stars</option>
+                            <option value="4-stars">4 stars</option>
+                            <option value="3-stars">3 stars</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="d-block text-uppercase font-weight-bold text-dark text-center" for="curriculum">Curriculum</label>
+                        <select name="curriculum" id="">
+                            <option value=""></option>
+                            <option value="2-years">up to 2 years</option>
+                            <option value="4-years">3 to 4 years</option>
+                            <option value="5-years">5+ years</option>
+                        </select>
+                    </div>
+                    <div class="mt-auto">
+                        <button class="r-btn-1 btn">Search</button>
+                        <button class="r-btn-2 btn"> <img class="btn-icon" src="/assets/edit.svg" alt=""> Clear filter</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="uni-results mb-4">
+            <h3 class="font-weight-bold text-center py-3">Search results found 6 university(ies):</h3>
+            <div class="uni-grid mx-auto">
+                <div class="uni-1 d-flex justify-content-center mx-auto">
+                    <a href="./detail-school.html">
+                    <h6 class="text-uppercase font-weight-bold text-center">Princeton</h6>
+                    <p class="font-weight-bold text-center d-block mx-auto">Spain</p>
+                </a>
+                </div>
+                <div class="uni-2 d-flex justify-content-center">
+                    <a href="./detail-school.html">
+                    <h6 class="text-uppercase font-weight-bold text-center" >UBA</h6>
+                    <p class="font-weight-bold text-center d-block mx-auto">Argentina</p>
+                </a>
+                </div>
+                <div class="uni-3 d-flex justify-content-center">
+                    <a href="./detail-school.html">
+                    <h6 class="text-uppercase font-weight-bold text-center">Carleton</h6>
+                    <p class="font-weight-bold text-center d-block mx-auto">United States</p>
+                </a>
+                </div>
+                <div class="uni-4 d-flex justify-content-center">
+                    <a href="./detail-school.html">
+                    <h6 class="text-uppercase font-weight-bold text-center">Akron</h6>
+                    <p class="font-weight-bold text-center d-block mx-auto">Germany</p>
+                </a>
+                </div>
+                <div class="uni-5 d-flex justify-content-center">
+                    <a href="./detail-school.html">
+                    <h6 class="text-uppercase font-weight-bold text-center">Ambedkar</h6>
+                    <p class="font-weight-bold text-center d-block mx-auto">Australia</p>
+                </a>
+                </div>
+                <div class="uni-6 d-flex justify-content-center">
+                    <a href="./detail-school.html">
+                    <h6 class="text-uppercase font-weight-bold text-center">Lomonosov</h6>
+                    <p class="font-weight-bold text-center d-block mx-auto">Rusia</p>
+                </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="container-fluid pt-4">
+        <div class="footer-fr row d-md-flex w-75 mx-auto justify-content-center">
+            <ul class="d-block d-md-flex justify-content-between">
+                <li><a class="font-weight-bold text-uppercase raw-color " href="#">home</a></li>
+                <li><a class="font-weight-bold text-uppercase raw-color" href="#">search</a></li>
+                <li><a class="font-weight-bold text-uppercase raw-color" href="#">about</a></li>
+                <li><a class="font-weight-bold text-uppercase raw-color" href="#">advertise</a></li>
+            </ul>
+            <img class="main-logo mx-3" src="/assets/birrete.svg" alt="">
+            <ul class="d-block d-md-flex justify-content-between ">
+                <li><a class="font-weight-bold text-uppercase raw-color" href="#">facebook</a></li>
+                <li><a class="font-weight-bold text-uppercase raw-color" href="#">twitter</a></li>
+                <li><a class="font-weight-bold text-uppercase raw-color"href="#">blog</a></li>
+                <li><a class="font-weight-bold text-uppercase raw-color"href="#">google+</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-sr row  mx-auto">
+            <div class="col-12 col-md-4">
+                <h5 class="text-uppercase font-weight-bold raw-color text-center my-3">subscribe</h5>
+                <div class="d-flex justify-content-stretch mx-auto footer-input-container">
+                    <input class="w-75 footer-input pl-2" type="text">
+                    <button class="footer-btn btn w-25">send</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="text-uppercase font-weight-bold raw-color text-center my-4">contact</h5>
+                <p class="font-weight-bold raw-color text-center">Have a question or suggestion?<br>
+                <span class="footer-span">aldulonghi@gmail.com</span></p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="text-uppercase font-weight-bold raw-color text-center my-4">About</h5>
+                <p class="raw-color text-center">UniFinder is an online platform that helps you to find the perfect University based on your goals,
+                     your location and your budget. You can do it by simply searching using the search bar on the homepage.<br>
+                     <span class="footer-span font-weight-bold"> <a href=""> Learn more...</a></span>
+                </p>
+            </div>
+        </div>
+        <div class="footer-tr row d-flex justify-content-between py-2">
+            <div class="col-12 col-md-2 d-flex align-items-center justify-content-center mb-2">
+            <ul class="d-flex justify-content-around w-100">
+                <li><a href="#">
+                    <img class="footer-icon" src="/assets/facebook.svg" alt="">
+                </a></li>
+                <li><a href="#">
+                    <img class="footer-icon"  src="/assets/twitter.svg" alt="">
+                </a></li>
+                <li><a href="#">
+                    <img class="footer-icon"  src="/assets/instagram.svg" alt="">
+                </a></li>
+                <li><a href="#">
+                    <img class="footer-icon" src="/assets/google.svg" alt="">
+                </a></li>
+                <li><a href="#">
+                    <img class="footer-icon" src="/assets/github.svg" alt="">
+                </a></li>
+            </ul>
+        </div>
+            <div class="col-12 col-md-10 d-md-flex w-100 justify-content-end align-items-center">
+                <p class="text-uppercase text-center my-0"> unifinder 2020 all rights reserved</p>
+                <p class="text-center my-0">Powered by <img class="footer-icon" src="/assets/graduation-hat.svg" alt=""><span class="text-uppercase"> icon digital </span> </p>
+                <p class="text-center text-uppercase my-0" >love and awesomeness</p>
+            </div>
+        </div>
+
+    </footer>
     
 </body>
 </html>
