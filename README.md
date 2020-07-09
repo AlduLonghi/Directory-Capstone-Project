@@ -64,6 +64,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Behance] (https://www.behance.net/gallery/25563385/PatashuleKE)
+- [Behance](https://www.behance.net/gallery/25563385/PatashuleKE)
 - The Odin Project
 - Microverse curriculum.
