@@ -237,6 +237,10 @@ footer .footer-fr {
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
 }
 
+.uni-info-footer ul {
+  flex-direction: column;
+}
+
 footer .footer-fr ul {
   width: 30%;
   height: 100%;
@@ -258,7 +262,7 @@ footer .footer-fr ul li {
 
 .footer-tr p {
   font-size: 0.6rem;
-  color: #333333;
+  color: #333;
 }
 
 footer .footer-sr p {
@@ -498,10 +502,6 @@ footer .footer-sr h5 {
 iframe {
   height: 315px;
   width: 90%;
-}
-
-.uni-info-footer ul {
-  flex-direction: column;
 }
 
 .footer-legality {
